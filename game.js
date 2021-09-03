@@ -17,7 +17,7 @@ class Game{
         this.score();
     }
     rules(){
-        console.log("rules go here");
+        console.log("rules go here");// right rules
     }
     playerSelector(){
         let selection = prompt("Would you like to play against a human or computer?")
@@ -29,7 +29,7 @@ class Game{
                 this.playerTwo = new AI();
                 break;
             default:
-                return (this.game);
+                return (playerSelector());
         }
     }
     choiceSelector(){
@@ -39,11 +39,12 @@ class Game{
         this.playerTwo.choiceSelect();
     }
     winner(){
-
+        //code goes here
     }
     score(){
-
+        //code goes here
     }
+    //validation ?
 }
 
 module.exports = Game;
